@@ -1,5 +1,5 @@
 
-import { Box, ListItem, ListItemButton, ListItemText, ListItemIcon, MenuItem, Card, CardHeader, Avatar, IconButton } from "@mui/material";
+import { Box, ListItem, ListItemButton, ListItemText, ListItemIcon, MenuItem, Card, CardHeader, Avatar, IconButton, Typography } from "@mui/material";
 import { red } from "@mui/material/colors";
 import { Link, Navigate, NavLink, Outlet } from "react-router-dom";
 // import ExitToAppIcon from "@mui/icons-material/ExitToApp";
@@ -44,7 +44,7 @@ export const Menu = () => {
                     border: "solid 3px black"
                 }}
             >
-                <ListItem sx={{ position: "absolute", flexDirection: "column", bottom: 150, color: "red" }}>
+                <ListItem sx={{ position: "absolute", flexDirection: "column",top:"400px", color: "red" }}>
 
                     <ListItemButton sx={{}}>
 
@@ -61,6 +61,12 @@ export const Menu = () => {
                     <ListItemButton >
                         <ListItemText primary="Proyectos" sx={{ background: "black", }} />
                     </ListItemButton>
+
+                <Typography>Contacto</Typography>
+                <Typography>Telefono: +54 221-3195893</Typography>
+                <Typography><a href="https://www.linkedin.com/in/ignacio-nicoletti/" target="_blank" >LinkedIn</a></Typography>
+                <Typography><a href="https://github.com/ignacio-nicoletti" target="_blank" >Github</a></Typography>
+                
 
                 </ListItem>
 
