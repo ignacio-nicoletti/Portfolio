@@ -1,10 +1,15 @@
 
 import { Box, ListItem, ListItemButton, ListItemText, ListItemIcon, MenuItem, Card, CardHeader, Avatar, IconButton } from "@mui/material";
 import { red } from "@mui/material/colors";
-import { Outlet } from "react-router-dom";
+import { Link, Navigate, NavLink, Outlet } from "react-router-dom";
 // import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 
 import perfil from "../Assets/nacho.png"
+
+const handlerabout=()=>{ 
+    Navigate('/about')
+}
+
 
 export const Menu = () => {
     return (
@@ -42,7 +47,15 @@ export const Menu = () => {
                 <ListItem sx={{ position: "absolute", flexDirection: "column", bottom: 150, color: "red" }}>
 
                     <ListItemButton sx={{}}>
-                        <ListItemText primary="Sobre Mi" sx={{ background: "black", }} />
+
+                        
+                            <ListItemText primary="Sobre Mi" 
+                            sx={{ background: "black", }} 
+                            onClick={handlerabout}
+                            />
+                        
+
+
                     </ListItemButton>
 
                     <ListItemButton >
