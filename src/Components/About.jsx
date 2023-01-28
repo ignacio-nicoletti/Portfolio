@@ -72,16 +72,17 @@ export const About = () => {
                                     color: '#ffff',
                                     pb: 2,
                                     fontFamily: 'montserrat',
-                                    alignItems: 'center',
-                                    justifyContent: 'space-around',
+                                    alignItems: 'flex-start',
+                                    flexDirection: 'column',
                                     fontWeight: 'bold',
                                 }}
                             >
-                                Estudios:
-                                - Primer año de licenciatura en sistemas
-                                - Diseño multimedial (en curso 4to año)
-                                - terceario de inyeccion electronica automotriz
-                                - Bootcamp en SoyHenry
+                                <Typography> Estudios:</Typography>
+                                <Typography>- Primer año de licenciatura en sistemas</Typography>
+                                <Typography>- Diseño multimedial (en curso 4to año)</Typography>
+                                <Typography>- Terceario de inyeccion electronica automotriz</Typography>
+                                <Typography>- Bootcamp en SoyHenry</Typography>
+
 
 
                             </Typography>
@@ -92,14 +93,17 @@ export const About = () => {
                                     color: '#ffff',
                                     pb: 2,
                                     fontFamily: 'montserrat',
-                                    alignItems: 'center',
-                                    justifyContent: 'space-around',
                                     fontWeight: 'bold',
+                                    alignItems: 'flex-start',
+                                    flexDirection: 'column',
                                 }}
                             >
-                                Experiencia laboral:
-                                Taller de car Detail
-                                Taller mecanico
+                                <Typography> Experiencia laboral:</Typography>
+                                <Typography>- Taller de car Detail</Typography>
+                                <Typography>- Taller mecanico</Typography>
+                               
+                                
+                                
 
 
                             </Typography>
@@ -110,7 +114,7 @@ export const About = () => {
 
                 </Paper>
             </Grid>
-           
+
             <Grid
             >
                 <Paper
@@ -165,7 +169,7 @@ export const About = () => {
 
 
                             </Typography>
-                         
+
                         </Container>
 
 

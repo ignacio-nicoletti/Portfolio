@@ -1,29 +1,29 @@
-
-import { Box, ListItem, ListItemButton, ListItemText, ListItemIcon, MenuItem, Card, CardHeader, Avatar, IconButton, Typography } from "@mui/material";
-import { red } from "@mui/material/colors";
-import { Link, Navigate, NavLink, Outlet } from "react-router-dom";
-// import ExitToAppIcon from "@mui/icons-material/ExitToApp";
-
+import { Box, ListItem, Typography, FormControl, Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 import perfil from "../Assets/nacho.png"
 
-const handlerabout=()=>{ 
-    Navigate('/about')
-}
-
-
 export const Menu = () => {
+    const navigate = useNavigate();
+
+    const handlerabout = () => {
+        navigate('/about');
+    }
+    const handlerProyect = () => {
+        navigate('/Proyects');
+    }
+
+
+
     return (
         <>
 
-            <img src={perfil} alt=""
+            <img src={perfil} alt="Foto de perfil"
                 style={{
                     position: "fixed",
                     width: "300px",
                     top: 0,
                     left: 20,
                     zIndex: 10002,
-                    // ml: '20px',
-                    // mb: '20px',
                     border: "solid 3px black"
                 }} />
 
@@ -44,29 +44,87 @@ export const Menu = () => {
                     border: "solid 3px black"
                 }}
             >
-                <ListItem sx={{ position: "absolute", flexDirection: "column",top:"400px", color: "red" }}>
+                <ListItem sx={{ position: "absolute", flexDirection: "column", top: "400px"}}>
 
-                    <ListItemButton sx={{}}>
 
-                        
-                            <ListItemText primary="Sobre Mi" 
-                            sx={{ background: "black", }} 
+
+                    <FormControl sx={{
+                                boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+                                fontFamily: 'montserrat',
+                                fontWeight: 'bold',
+                                mb: 1,
+                                width:'100%'
+                            }}>
+                        <Button
                             onClick={handlerabout}
-                            />
-                        
+                            // size="small"
+                            variant="contained"
+                            // color="secondary"
+                           
+                            
+                        >
+                            Sobre Mi
+                        </Button>
+                    </FormControl>
+                    <FormControl sx={{
+                                boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+                                fontFamily: 'montserrat',
+                                fontWeight: 'bold',
+                                mb: 1,
+                                width:'100%'
+                            }}>
+                        <Button
+                            // startIcon={<ArrowBackIosNewIcon />}
+                            onClick={handlerProyect}
+                            size="small"
+                            variant="contained"
+                            color="secondary"
+                            
+                        >
+                            Proyectos
+                        </Button>
+                    </FormControl>
+                    <Typography>Contacto</Typography>
+                    <FormControl sx={{
+                                boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+                                fontFamily: 'montserrat',
+                                fontWeight: 'bold',
+                                mb: 1,
+                                width:'100%'
+                            }}>
+                        <Button
+                         
+                            size="small"
+                            variant="contained"
+                            color="secondary"
+                            
+                        >
+                            <a href="https://www.linkedin.com/in/ignacio-nicoletti/" target="_blank" >LinkedIn</a>
+                        </Button>
+                    </FormControl>
+                    <FormControl sx={{
+                                boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+                                fontFamily: 'montserrat',
+                                fontWeight: 'bold',
+                                mb: 1,
+                                width:'100%'
+                            }}>
+                        <Button
+                            // startIcon={<ArrowBackIosNewIcon />}
+                            // onClick={handlerProyect}
+                            size="small"
+                            variant="contained"
+                            color="secondary"
+                            
+                        >
+                            <a href="https://github.com/ignacio-nicoletti" target="_blank" >Github</a>
+                        </Button>
+                    </FormControl>
 
 
-                    </ListItemButton>
+                    <Typography>Telefono: +54 221-3195893</Typography>
 
-                    <ListItemButton >
-                        <ListItemText primary="Proyectos" sx={{ background: "black", }} />
-                    </ListItemButton>
 
-                <Typography>Contacto</Typography>
-                <Typography>Telefono: +54 221-3195893</Typography>
-                <Typography><a href="https://www.linkedin.com/in/ignacio-nicoletti/" target="_blank" >LinkedIn</a></Typography>
-                <Typography><a href="https://github.com/ignacio-nicoletti" target="_blank" >Github</a></Typography>
-                
 
                 </ListItem>
 
