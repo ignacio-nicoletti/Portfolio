@@ -1,11 +1,4 @@
-
-import { Box, ListItem, ListItemButton, ListItemText, ListItemIcon, MenuItem, Card, CardHeader, Avatar, IconButton, Container, Typography, Paper, Grid } from "@mui/material";
-import { Link, Navigate, NavLink, Outlet } from "react-router-dom";
-
-
-const handlerabout = () => {
-    Navigate('/about')
-}
+import {Container, Typography, Paper, Grid } from "@mui/material";
 
 
 export const About = () => {
@@ -17,13 +10,13 @@ export const About = () => {
                     elevation={10}
                     style={{
                         padding: 20,
-                        marginTop: 20,
+                        marginTop: 10,
                         borderRadius: 15,
                         backgroundColor: '#2b2d42',
                         marginBottom: 15,
                         marginRight: "50%",
                         position: "absolute",
-                        top: "25vh",
+                        top: "5vh",
                         left: "45%",
                         width: "500px",
                         boxShadow: 1,
@@ -77,11 +70,14 @@ export const About = () => {
                                     fontWeight: 'bold',
                                 }}
                             >
-                                <Typography> Estudios:</Typography>
-                                <Typography>- Primer año de licenciatura en sistemas</Typography>
-                                <Typography>- Diseño multimedial (en curso 4to año)</Typography>
-                                <Typography>- Terceario de inyeccion electronica automotriz</Typography>
-                                <Typography>- Bootcamp en SoyHenry</Typography>
+                                <Typography  sx={{
+                                   
+                                }}> 
+                                Estudios:</Typography>
+                                <Typography>- Primer año de licenciatura en sistemas.</Typography>
+                                <Typography>- Diseño multimedial (en curso 4to año).</Typography>
+                                <Typography>- Terceario de inyeccion electronica automotriz.</Typography>
+                                <Typography>- Bootcamp en SoyHenry.</Typography>
 
 
 
@@ -99,13 +95,9 @@ export const About = () => {
                                 }}
                             >
                                 <Typography> Experiencia laboral:</Typography>
-                                <Typography>- Taller de car Detail</Typography>
-                                <Typography>- Taller mecanico</Typography>
-                               
-                                
-                                
-
-
+                                <Typography>- Taller de Car Detail.</Typography>
+                                <Typography>- Taller mecanico.</Typography>
+                                 
                             </Typography>
                         </Container>
 
@@ -121,13 +113,13 @@ export const About = () => {
                     elevation={10}
                     style={{
                         padding: 20,
-                        marginTop: 20,
+                        marginTop: 5,
                         borderRadius: 15,
                         backgroundColor: '#2b2d42',
                         marginBottom: 15,
                         marginRight: "50%",
                         position: "absolute",
-                        top: "100vh",
+                        top: "70vh",
                         left: "45%",
                         width: "500px",
                         boxShadow: 1,

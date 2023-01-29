@@ -34,7 +34,7 @@ export const Menu = () => {
                     top: 0,
                     left: 0,
                     width: "300px",
-                    height: 'calc(100vh - 0px)',
+                    height: 'calc(100vh - 6px)',
                     color: "#272727",
                     background: '#2b2d42',
                     boxShadow: 1,
@@ -44,85 +44,106 @@ export const Menu = () => {
                     border: "solid 3px black"
                 }}
             >
-                <ListItem sx={{ position: "absolute", flexDirection: "column", top: "400px"}}>
+                <ListItem sx={{ position: "absolute", flexDirection: "column", top: "375px" }}>
 
 
 
                     <FormControl sx={{
-                                boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
-                                fontFamily: 'montserrat',
-                                fontWeight: 'bold',
-                                mb: 1,
-                                width:'100%'
-                            }}>
+                        boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+                        fontFamily: 'montserrat',
+                        fontWeight: 'bold',
+                        mb: 1,
+                        width: '100%',
+                        // background:"black"
+                    }}>
                         <Button
                             onClick={handlerabout}
                             // size="small"
                             variant="contained"
-                            // color="secondary"
-                           
-                            
+                            color="info"
+
+
                         >
                             Sobre Mi
                         </Button>
                     </FormControl>
                     <FormControl sx={{
-                                boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
-                                fontFamily: 'montserrat',
-                                fontWeight: 'bold',
-                                mb: 1,
-                                width:'100%'
-                            }}>
+                        boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+                        fontFamily: 'montserrat',
+                        fontWeight: 'bold',
+                        mb: 1,
+                        width: '100%'
+                    }}>
                         <Button
-                            // startIcon={<ArrowBackIosNewIcon />}
                             onClick={handlerProyect}
                             size="small"
                             variant="contained"
-                            color="secondary"
-                            
+                            color="info"
+
                         >
                             Proyectos
                         </Button>
                     </FormControl>
-                    <Typography>Contacto</Typography>
+                    <Typography
+                        sx={{
+                            boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+                            fontFamily: 'montserrat',
+                            mb: 1,
+                            width: '100%',
+                            color:'white',
+                            borderRadius:'3px'
+                        }}>
+
+                        Contacto :
+                    </Typography>
                     <FormControl sx={{
-                                boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
-                                fontFamily: 'montserrat',
-                                fontWeight: 'bold',
-                                mb: 1,
-                                width:'100%'
-                            }}>
+                        boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+                        fontFamily: 'montserrat',
+                        fontWeight: 'bold',
+                        mb: 1,
+                        width: '100%'
+                    }}>
                         <Button
-                         
+
                             size="small"
                             variant="contained"
-                            color="secondary"
-                            
+                            color="info"
+
                         >
-                            <a href="https://www.linkedin.com/in/ignacio-nicoletti/" target="_blank" >LinkedIn</a>
+                            <a style={{ textDecoration:'none',color:'white'}} href="https://www.linkedin.com/in/ignacio-nicoletti/" target="_blank" rel="noreferrer" >LinkedIn</a>
                         </Button>
                     </FormControl>
                     <FormControl sx={{
-                                boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
-                                fontFamily: 'montserrat',
-                                fontWeight: 'bold',
-                                mb: 1,
-                                width:'100%'
-                            }}>
+                        boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+                        fontFamily: 'montserrat',
+                        fontWeight: 'bold',
+                        mb: 1,
+                        width: '100%'
+                    }}>
                         <Button
-                            // startIcon={<ArrowBackIosNewIcon />}
-                            // onClick={handlerProyect}
                             size="small"
                             variant="contained"
-                            color="secondary"
-                            
+                            color="info"
+
                         >
-                            <a href="https://github.com/ignacio-nicoletti" target="_blank" >Github</a>
+                            <a style={{ textDecoration:'none',color:'white'}} href="https://github.com/ignacio-nicoletti" target="_blank" rel="noreferrer">Github</a>
                         </Button>
                     </FormControl>
 
 
-                    <Typography>Telefono: +54 221-3195893</Typography>
+                    <Typography 
+                     sx={{
+                        boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+                        fontFamily: 'montserrat',
+                        // fontWeight: 'bold',
+                        mb: 1,
+                        width: '100%',
+                        color:'white',
+                        background:'#2b2d42',
+                        borderRadius:'3px'
+                    }}>
+                    Telefono: +54 221-3195893
+                    </Typography>
 
 
 
