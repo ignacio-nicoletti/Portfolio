@@ -11,7 +11,7 @@ export const Home = () => {
             <Menu />
             {/* <About/> */}
 
-          <RenderProjects/>
+          {/* <RenderProjects/> */}
         </>
     )
 

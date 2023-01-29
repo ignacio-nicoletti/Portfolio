@@ -103,6 +103,7 @@ export const ProjectVideogames = () => {
                                     size="small"
                                     variant="contained"
                                     color="info"
+                                    disabled={true}
 
                                 >
                                     <a style={{ textDecoration: 'none', color: 'white' }} href="https://nabijash.vercel.app/" target="_blank" rel="noreferrer">Link al proyecto</a>

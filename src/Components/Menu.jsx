@@ -9,7 +9,7 @@ export const Menu = () => {
         navigate('/about');
     }
     const handlerProyect = () => {
-        navigate('/Proyects');
+        navigate('/projects');
     }
 
 
@@ -21,6 +21,7 @@ export const Menu = () => {
                 style={{
                     position: "fixed",
                     width: "300px",
+                    height: "285px",
                     top: 0,
                     left: 20,
                     zIndex: 10002,
@@ -44,7 +45,7 @@ export const Menu = () => {
                     border: "solid 3px black"
                 }}
             >
-                <ListItem sx={{ position: "absolute", flexDirection: "column", top: "375px" }}>
+                <ListItem sx={{ position: "absolute", flexDirection: "column", top: "325px" }}>
 
 
 
@@ -90,8 +91,8 @@ export const Menu = () => {
                             fontFamily: 'montserrat',
                             mb: 1,
                             width: '100%',
-                            color:'white',
-                            borderRadius:'3px'
+                            color: 'white',
+                            borderRadius: '3px'
                         }}>
 
                         Contacto :
@@ -110,7 +111,7 @@ export const Menu = () => {
                             color="info"
 
                         >
-                            <a style={{ textDecoration:'none',color:'white'}} href="https://www.linkedin.com/in/ignacio-nicoletti/" target="_blank" rel="noreferrer" >LinkedIn</a>
+                            <a style={{ textDecoration: 'none', color: 'white' }} href="https://www.linkedin.com/in/ignacio-nicoletti/" target="_blank" rel="noreferrer" >LinkedIn</a>
                         </Button>
                     </FormControl>
                     <FormControl sx={{
@@ -126,25 +127,38 @@ export const Menu = () => {
                             color="info"
 
                         >
-                            <a style={{ textDecoration:'none',color:'white'}} href="https://github.com/ignacio-nicoletti" target="_blank" rel="noreferrer">Github</a>
+                            <a style={{ textDecoration: 'none', color: 'white' }} href="https://github.com/ignacio-nicoletti" target="_blank" rel="noreferrer">Github</a>
                         </Button>
                     </FormControl>
 
 
-                    <Typography 
-                     sx={{
-                        boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
-                        fontFamily: 'montserrat',
-                        // fontWeight: 'bold',
-                        mb: 1,
-                        width: '100%',
-                        color:'white',
-                        background:'#2b2d42',
-                        borderRadius:'3px'
-                    }}>
-                    Telefono: +54 221-3195893
+                    <Typography
+                        sx={{
+                            boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+                            fontFamily: 'montserrat',
+                            // fontWeight: 'bold',
+                            mb: 1,
+                            width: '100%',
+                            color: 'white',
+                            background: '#2b2d42',
+                            borderRadius: '3px'
+                        }}>
+                        Telefono: +54 221-3195893
                     </Typography>
 
+                    <Typography
+                        sx={{
+                            boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+                            fontFamily: 'montserrat',
+                            // fontWeight: 'bold',
+                            mb: 1,
+                            width: '100%',
+                            color: 'white',
+                            background: '#2b2d42',
+                            borderRadius: '3px'
+                        }}>
+                       <a style={{ textDecoration: 'none', color: 'white' }} href="./Nicoletti-Ignacio-CV.pdf" download>Curriculum Vitae</a> 
+                    </Typography>
 
 
                 </ListItem>
