@@ -39,13 +39,7 @@ export const ProjectVideogames = () => {
                             image={nabijash}
                             title="NabijashPhoto"
                         />
-                        <Container
-                            // sx={{
-                            //     alignContent: 'center',
-                            //     alignItems: 'center',
-                            //     textAlign: 'center',
-                            // }}
-                        >
+                        <Container>
                             <Typography
                                 sx={{
                                     display: 'flex',
@@ -72,7 +66,6 @@ export const ProjectVideogames = () => {
                                     fontFamily: 'montserrat',
                                     alignItems: 'flex-start',
                                     flexDirection: 'column',
-                                    // fontWeight: 'bold',
                                      justifyContent: 'left',
                                 }}
                                 >
@@ -81,17 +74,7 @@ export const ProjectVideogames = () => {
                                 <Typography>Participantes: 1</Typography>
 
                             </Typography>
-                                {/* <Typography  sx={{
-                                    display: 'flex',
-                                    fontSize: 20,
-                                    color: '#ffff',
-                                    fontFamily: 'montserrat',
-                                    alignItems: 'flex-start',
-                                    flexDirection: 'column',
-                                    // fontWeight: 'bold',
-                                     justifyContent: 'left',
-                                }}>Plataforma el cual se puede publicar proyectos y alumnos postularse a ellos.</Typography> */}
-
+                               
                             <FormControl sx={{
                                 boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
                                 fontFamily: 'montserrat',

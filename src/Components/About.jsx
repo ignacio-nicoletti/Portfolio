@@ -1,4 +1,15 @@
 import {Container, Typography, Paper, Grid } from "@mui/material";
+import axiosimg from '../Assets/tecnologias/axios.png'
+import cssimg from '../Assets/tecnologias/css.png'
+import gitimg from '../Assets/tecnologias/git.png'
+import htmlimg from '../Assets/tecnologias/html.png'
+import jsimg from '../Assets/tecnologias/javas.png'
+import mongooseimg from '../Assets/tecnologias/moongose.png'
+import sqlimg from '../Assets/tecnologias/sql.png'
+import reduximg from '../Assets/tecnologias/redux.png'
+import typeimg from '../Assets/tecnologias/type.png'
+import reactimg from '../Assets/tecnologias/react.png'
+import pgimg from '../Assets/tecnologias/pg.png'
 
 
 export const About = () => {
@@ -161,7 +172,17 @@ export const About = () => {
 
 
                             </Typography>
-
+                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"5px"}} src={axiosimg} alt="" />
+                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"40px"}} src={cssimg} alt="" />
+                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"40px"}} src={gitimg} alt="" />
+                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"40px"}} src={htmlimg} alt="" />
+                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"40px"}} src={mongooseimg} alt="" />
+                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"5px"}} src={reactimg} alt="" />
+                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"40px"}} src={reduximg} alt="" />
+                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"40px"}} src={jsimg} alt="" />
+                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"40px"}} src={typeimg} alt="" />
+                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"40px"}} src={sqlimg} alt="" />
+                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"40px"}} src={pgimg} alt="" />
                         </Container>
 
 
