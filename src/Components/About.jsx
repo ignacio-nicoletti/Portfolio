@@ -93,23 +93,6 @@ export const About = () => {
                         }}
                     >
 
-
-                        {/* <Typography
-                            sx={{
-                                display: 'flex',
-                                fontSize: 25,
-                                color: '#fff',
-                                pb: 2,
-                                fontFamily: 'montserrat',
-                                alignItems: 'center',
-                                justifyContent: 'space-around',
-                                fontWeight: 'bold',
-                            }}
-                        >
-                            Programador Full Stack Developer con +800 horas
-
-
-                        </Typography> */}
                         <Typography
                             sx={{
                                 display: 'flex',

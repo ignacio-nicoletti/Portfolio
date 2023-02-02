@@ -1,5 +1,5 @@
 import { Container, Typography, Paper, Grid, Button, FormControl, CardMedia } from "@mui/material";
-import nabijash from '../../Assets/nabijash.png'
+import projectI from '../../Assets/individualP.png'
 export const ProjectVideogames = () => {
     return (
         <>
@@ -36,7 +36,7 @@ export const ProjectVideogames = () => {
 
                         <CardMedia
                             sx={{width: '100%' ,height:150}}
-                            image={nabijash}
+                            image={projectI}
                             title="NabijashPhoto"
                         />
                         <Container>
@@ -85,8 +85,7 @@ export const ProjectVideogames = () => {
                                 <Button
                                     size="small"
                                     variant="contained"
-                                    color="info"
-                                    // disabled={true}
+                                    color="info"                              
 
                                 >
                                     <a style={{ textDecoration: 'none', color: 'white' }} href="https://github.com/ignacio-nicoletti/proyecto_individual" target="_blank" rel="noreferrer">Repositorio</a>
