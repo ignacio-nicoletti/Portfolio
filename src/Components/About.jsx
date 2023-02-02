@@ -1,4 +1,4 @@
-import {Container, Typography, Paper, Grid } from "@mui/material";
+import { Container, Typography, Paper, Grid } from "@mui/material";
 import axiosimg from '../Assets/tecnologias/axios.png'
 import cssimg from '../Assets/tecnologias/css.png'
 import gitimg from '../Assets/tecnologias/git.png'
@@ -31,7 +31,7 @@ export const About = () => {
                         left: "45%",
                         width: "500px",
                         boxShadow: 1,
-                        zIndex: 10002,
+                        zIndex: 10001,
                         ml: '20px',
                         mb: '20px',
                         border: "solid 3px black"
@@ -46,72 +46,116 @@ export const About = () => {
                         }}
                     >
 
-                        <Container
+
+                        <Typography
                             sx={{
-                                alignContent: 'center',
+                                display: 'flex',
+                                fontSize: 25,
+                                color: '#fff',
+                                pb: 2,
+                                fontFamily: 'montserrat',
                                 alignItems: 'center',
-                                textAlign: 'center',
+                                justifyContent: 'space-around',
+                                fontWeight: 'bold',
                             }}
                         >
-                            <Typography
-                                sx={{
-                                    display: 'flex',
-                                    fontSize: 25,
-                                    color: '#fff',
-                                    pb: 2,
-                                    fontFamily: 'montserrat',
-                                    alignItems: 'center',
-                                    justifyContent: 'space-around',
-                                    fontWeight: 'bold',
-                                }}
-                            >
-                                Programador Full Stack Developer con +800 horas
+                            Programador Full Stack Developer
 
 
+                        </Typography>
+                        <Typography
+                            sx={{
+                                display: 'flex',
+                                fontSize: 25,
+                                color: '#ffff',
+                                pb: 2,
+                                fontFamily: 'montserrat',
+                                alignItems: 'flex-start',
+                                flexDirection: 'column',
+                                fontWeight: 'bold',
+                            }}
+                        >
+                            <Typography sx={{
+
+                            }}>
+                                Cuento con mas de 800 horas de práctica, desde chico siempre me gusto la programación
+                                lo cual siempre tengo motivación para perfeccionar mis habilidades y aprender nuevas tecnologías.
+                                Me egresé del Bootcamp SoyHenry obteniendo como logro que el proyecto grupal sea considerado uno de los mejores entre las dos cohortes.
                             </Typography>
-                            <Typography
-                                sx={{
-                                    display: 'flex',
-                                    fontSize: 25,
-                                    color: '#ffff',
-                                    pb: 2,
-                                    fontFamily: 'montserrat',
-                                    alignItems: 'flex-start',
-                                    flexDirection: 'column',
-                                    fontWeight: 'bold',
-                                }}
-                            >
-                                <Typography  sx={{
-                                   
-                                }}> 
+                        </Typography>
+                    </Container>
+
+                    <Container
+                        sx={{
+                            alignContent: 'center',
+                            alignItems: 'center',
+                            textAlign: 'center',
+                        }}
+                    >
+
+
+                        {/* <Typography
+                            sx={{
+                                display: 'flex',
+                                fontSize: 25,
+                                color: '#fff',
+                                pb: 2,
+                                fontFamily: 'montserrat',
+                                alignItems: 'center',
+                                justifyContent: 'space-around',
+                                fontWeight: 'bold',
+                            }}
+                        >
+                            Programador Full Stack Developer con +800 horas
+
+
+                        </Typography> */}
+                        <Typography
+                            sx={{
+                                display: 'flex',
+                                fontSize: 25,
+                                color: '#ffff',
+                                pb: 2,
+                                fontFamily: 'montserrat',
+                                alignItems: 'flex-start',
+                                flexDirection: 'column',
+                                fontWeight: 'bold',
+                            }}
+                        >
+                            <Typography sx={{
+                                fontWeight: 'bold',
+
+                            }}>
                                 Estudios:</Typography>
-                                <Typography>- Primer año de licenciatura en sistemas.</Typography>
-                                <Typography>- Diseño multimedial (en curso 4to año).</Typography>
-                                <Typography>- Terceario de inyeccion electronica automotriz.</Typography>
-                                <Typography>- Bootcamp en SoyHenry.</Typography>
+                            <Typography>- Primer año de licenciatura en sistemas.</Typography>
+                            <Typography>- Diseño multimedial (en curso 4to año).</Typography>
+                            <Typography>- Terceario de inyeccion electronica automotriz.</Typography>
+                            <Typography>- Bootcamp en SoyHenry.</Typography>
 
 
 
-                            </Typography>
-                            <Typography
-                                sx={{
-                                    display: 'flex',
-                                    fontSize: 25,
-                                    color: '#ffff',
-                                    pb: 2,
-                                    fontFamily: 'montserrat',
-                                    fontWeight: 'bold',
-                                    alignItems: 'flex-start',
-                                    flexDirection: 'column',
-                                }}
-                            >
-                                <Typography> Experiencia laboral:</Typography>
-                                <Typography>- Taller de Car Detail.</Typography>
-                                <Typography>- Taller mecanico.</Typography>
-                                 
-                            </Typography>
-                        </Container>
+                        </Typography>
+                        <Typography
+                            sx={{
+                                display: 'flex',
+                                fontSize: 25,
+                                color: '#ffff',
+                                pb: 2,
+                                fontFamily: 'montserrat',
+                                fontWeight: 'bold',
+                                alignItems: 'flex-start',
+                                flexDirection: 'column',
+                            }}
+                        >
+                            <Typography sx={{
+                                fontWeight: 'bold',
 
+                            }}> Experiencia laboral:</Typography>
+                            <Typography>- Taller de Car Detail.</Typography>
+                            <Typography>- Taller mecanico.</Typography>
+                            <Typography>- Nabijash Proyecto Final.</Typography>
+
+                        </Typography>
 
                     </Container>
 
@@ -130,7 +174,7 @@ export const About = () => {
                         marginBottom: 15,
                         marginRight: "50%",
                         position: "absolute",
-                        top: "70vh",
+                        top: "90vh",
                         left: "45%",
                         width: "500px",
                         boxShadow: 1,
@@ -172,17 +216,17 @@ export const About = () => {
 
 
                             </Typography>
-                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"5px"}} src={axiosimg} alt="" />
-                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"40px"}} src={cssimg} alt="" />
-                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"40px"}} src={gitimg} alt="" />
-                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"40px"}} src={htmlimg} alt="" />
-                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"40px"}} src={mongooseimg} alt="" />
-                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"5px"}} src={reactimg} alt="" />
-                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"40px"}} src={reduximg} alt="" />
-                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"40px"}} src={jsimg} alt="" />
-                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"40px"}} src={typeimg} alt="" />
-                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"40px"}} src={sqlimg} alt="" />
-                            <img style={{width:50,heigth:50,backgroundColor:"none",borderRadius:"40px"}} src={pgimg} alt="" />
+                            <img style={{ width: 50, heigth: 50, backgroundColor: "none", borderRadius: "5px" }} src={axiosimg} alt="" />
+                            <img style={{ width: 50, heigth: 50, backgroundColor: "none", borderRadius: "40px" }} src={cssimg} alt="" />
+                            <img style={{ width: 50, heigth: 50, backgroundColor: "none", borderRadius: "40px" }} src={gitimg} alt="" />
+                            <img style={{ width: 50, heigth: 50, backgroundColor: "none", borderRadius: "40px" }} src={htmlimg} alt="" />
+                            <img style={{ width: 50, heigth: 50, backgroundColor: "none", borderRadius: "40px" }} src={mongooseimg} alt="" />
+                            <img style={{ width: 50, heigth: 50, backgroundColor: "none", borderRadius: "5px" }} src={reactimg} alt="" />
+                            <img style={{ width: 50, heigth: 50, backgroundColor: "none", borderRadius: "40px" }} src={reduximg} alt="" />
+                            <img style={{ width: 50, heigth: 50, backgroundColor: "none", borderRadius: "40px" }} src={jsimg} alt="" />
+                            <img style={{ width: 50, heigth: 50, backgroundColor: "none", borderRadius: "40px" }} src={typeimg} alt="" />
+                            <img style={{ width: 50, heigth: 50, backgroundColor: "none", borderRadius: "40px" }} src={sqlimg} alt="" />
+                            <img style={{ width: 50, heigth: 50, backgroundColor: "none", borderRadius: "40px" }} src={pgimg} alt="" />
                         </Container>
 
 

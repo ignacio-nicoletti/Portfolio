@@ -3,9 +3,9 @@ import { Menu } from '../Components/Menu';
 
 export const Home = () => {
     return (
-        <>
-            <img src={fondo} alt="Fondo" style={{ width: "100%", height: "100%",display:"block" }} />
+        <div >
+            <img src={fondo} alt="Fondo" style={{ width: "100%",height:"125vh",display:"block"}} />
             <Menu />
-        </>
+        </div>
     )
 }
