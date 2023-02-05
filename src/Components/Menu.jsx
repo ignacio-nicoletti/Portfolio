@@ -12,15 +12,13 @@ export const Menu = () => {
         navigate('/projects');
     }
 
-
-
     return (
         <>
 
             <img src={perfil} alt="Foto de perfil"
                 style={{
                     position: "fixed",
-                    width: "300px",
+                    width: "25%",
                     height: "285px",
                     top: 0,
                     left: 20,
@@ -34,7 +32,7 @@ export const Menu = () => {
                     position: "fixed",
                     top: 0,
                     left: 0,
-                    width: "300px",
+                    width: "25%",
                     height: 'calc(100vh - 6px)',
                     color: "#272727",
                     background: '#2b2d42',
@@ -45,7 +43,7 @@ export const Menu = () => {
                     border: "solid 3px black"
                 }}
             >
-                <ListItem sx={{ position: "absolute", flexDirection: "column", top: "325px" }}>
+                <ListItem sx={{ position: "absolute", flexDirection: "column", top: "50%" }}>
 
 
 
@@ -55,15 +53,12 @@ export const Menu = () => {
                         fontWeight: 'bold',
                         mb: 1,
                         width: '100%',
-                        // background:"black"
+
                     }}>
                         <Button
                             onClick={handlerabout}
-                            // size="small"
                             variant="contained"
                             color="info"
-
-
                         >
                             Sobre Mi
                         </Button>
@@ -136,7 +131,6 @@ export const Menu = () => {
                         sx={{
                             boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
                             fontFamily: 'montserrat',
-                            // fontWeight: 'bold',
                             mb: 1,
                             width: '100%',
                             color: 'white',
@@ -150,14 +144,13 @@ export const Menu = () => {
                         sx={{
                             boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
                             fontFamily: 'montserrat',
-                            // fontWeight: 'bold',
                             mb: 1,
                             width: '100%',
                             color: 'white',
                             background: '#2b2d42',
                             borderRadius: '3px'
                         }}>
-                       <a style={{ textDecoration: 'none', color: 'white' }} href="./Nicoletti-Ignacio-CV.pdf" download>Curriculum Vitae</a> 
+                        <a style={{ textDecoration: 'none', color: 'white' }} href="./Nicoletti-Ignacio-CV.pdf" download>Curriculum Vitae</a>
                     </Typography>
 
 

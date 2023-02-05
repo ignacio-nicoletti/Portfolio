@@ -17,7 +17,7 @@ export const ProjectVideogames = () => {
                         position: "absolute",
                         top: "5vh",
                         left: "65%",
-                        width: "400px",
+                        width: "25%",
                         boxShadow: 1,
                         zIndex: 10002,
                         ml: '20px',

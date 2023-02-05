@@ -16,8 +16,8 @@ export const ProjectNabijash = () => {
                         marginRight: "50%",
                         position: "absolute",
                         top: "5vh",
-                        left: "30%",
-                        width: "400px",
+                        left: "35%",
+                        width: "25%",
                         boxShadow: 1,
                         zIndex: 10002,
                         ml: '20px',
@@ -81,17 +81,7 @@ export const ProjectNabijash = () => {
                                 <Typography>Participantes: 8</Typography>
 
                             </Typography>
-                                {/* <Typography  sx={{
-                                    display: 'flex',
-                                    fontSize: 20,
-                                    color: '#ffff',
-                                    fontFamily: 'montserrat',
-                                    alignItems: 'flex-start',
-                                    flexDirection: 'column',
-                                    // fontWeight: 'bold',
-                                     justifyContent: 'left',
-                                }}>Plataforma el cual se puede publicar proyectos y alumnos postularse a ellos.</Typography> */}
-
+            
                             <FormControl sx={{
                                 boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
                                 fontFamily: 'montserrat',
