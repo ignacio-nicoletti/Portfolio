@@ -1,0 +1,27 @@
+.contain {
+  color: white;
+  padding-inline: 5%;
+  height: 40vh;
+}
+
+.textAndImage {
+  display: flex;
+  gap: 30px;
+}
+
+.text {
+  width: 50%;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+}
+.image img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.ability {
+  color: red;
+}

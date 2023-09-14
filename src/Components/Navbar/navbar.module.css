@@ -1,0 +1,35 @@
+.contain {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.options {
+  display: flex;
+  gap: 10px;
+  justify-content: right;
+  /* padding-block: 0.5%; */
+  align-items: center;
+  width: 40%;
+}
+
+
+.options p:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.options button {
+  width: 20%;
+  height: 30px;
+  border-radius: 15px;
+  background-color: red;
+  color: white;
+}
